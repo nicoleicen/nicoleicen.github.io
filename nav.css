@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
-body, nav, ul {
+body, nav, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -20,9 +20,10 @@ nav ul {
 /* Styling for each list item (nav link) */
 nav ul li {
     margin-right: 15px; /* Space between each nav item */
+    position: relative; /* Ensure position for dropdown */
 }
 
-/* Styling for each anchor tag (link) within list items */
+/* Styling for anchor tags (links) */
 nav ul li a {
     text-decoration: none; /* Remove underline from links */
     color: #3498db; /* Header 1 color (blue) */
@@ -33,6 +34,40 @@ nav ul li a {
 
 /* Hover effect for anchor tags */
 nav ul li a:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+    color: #ecf0f1; /* Light gray text on hover */
+}
+
+/* Dropdown menu positioning */
+nav ul ul {
+    position: absolute;
+    top: 100%; /* Position dropdown below parent */
+    left: 0;
+    background-color: #ecf0f1; /* Light gray background */
+    display: none; /* Hide dropdown by default */
+    border: 1px solid #bdc3c7; /* Medium gray border */
+    border-radius: 5px; /* Rounded corners for the border */
+}
+
+/* Show dropdown on hover */
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Styling for dropdown list items */
+nav ul ul li {
+    margin-right: 0; /* Remove margin between dropdown items */
+}
+
+/* Styling for dropdown anchor tags (links) */
+nav ul ul li a {
+    display: block; /* Display links as block for full width */
+    padding: 8px 12px; /* Padding inside each link */
+    color: #3498db; /* Header 1 color (blue) */
+}
+
+/* Hover effect for dropdown anchor tags */
+nav ul ul li a:hover {
     background-color: #2980b9; /* Darker shade of blue on hover */
     color: #ecf0f1; /* Light gray text on hover */
 }
