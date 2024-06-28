@@ -1,3 +1,35 @@
+/* Reset default margin and padding */
+body, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif; /* Body text/fine print font */
+    background-color: #ecf0f1; /* Light gray background */
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #3498db; /* Header background color (blue) */
+    color: #ecf0f1; /* Header text color (light gray) */
+    text-align: center; /* Center-align header text */
+    padding: 20px; /* Padding around header content */
+}
+
 h1 {
-    color: #3498db; /* Hex Code for a readable blue color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font for headers */
+    color: #3498db; /* Header 1 color (blue) */
+}
+
+main {
+    padding: 20px; /* Padding inside the main content */
+}
+
+footer {
+    background-color: #bdc3c7; /* Medium gray background */
+    color: #333; /* Footer text color */
+    text-align: center; /* Center-align footer text */
+    padding: 10px; /* Padding around footer content */
 }

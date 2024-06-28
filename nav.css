@@ -1,0 +1,38 @@
+/* Reset default margin and padding */
+body, nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 10px; /* Padding around the navigation bar */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font for headers */
+}
+
+/* Styling for the unordered list (nav links) */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    display: flex; /* Use Flexbox for horizontal layout */
+}
+
+/* Styling for each list item (nav link) */
+nav ul li {
+    margin-right: 15px; /* Space between each nav item */
+}
+
+/* Styling for each anchor tag (link) within list items */
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #3498db; /* Header 1 color (blue) */
+    padding: 8px 12px; /* Padding inside each link */
+    border: 1px solid #bdc3c7; /* Medium gray border */
+    border-radius: 5px; /* Rounded corners for the border */
+}
+
+/* Hover effect for anchor tags */
+nav ul li a:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+    color: #ecf0f1; /* Light gray text on hover */
+}
