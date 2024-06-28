@@ -30,6 +30,7 @@ nav ul li a {
     padding: 8px 12px; /* Padding inside each link */
     border: 1px solid #bdc3c7; /* Medium gray border */
     border-radius: 5px; /* Rounded corners for the border */
+    display: inline-block; /* Ensure block display for links */
 }
 
 /* Hover effect for anchor tags */
@@ -47,6 +48,7 @@ nav ul ul {
     display: none; /* Hide dropdown by default */
     border: 1px solid #bdc3c7; /* Medium gray border */
     border-radius: 5px; /* Rounded corners for the border */
+    z-index: 1; /* Ensure dropdown is above other content */
 }
 
 /* Show dropdown on hover */
