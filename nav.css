@@ -73,3 +73,15 @@ nav ul ul li a:hover {
     background-color: #2980b9; /* Darker shade of blue on hover */
     color: #ecf0f1; /* Light gray text on hover */
 }
+
+/* Styling for paragraphs */
+p {
+    text-indent: 1em; /* Indent all paragraphs */
+}
+
+/* Styling for the first paragraph */
+p:first-of-type::first-letter {
+    font-size: 150%; /* Increase font size of the first letter */
+    font-weight: bold; /* Make the first letter bold */
+}
+
