@@ -97,9 +97,9 @@ blockquote {
 .gallery img {
     max-width: 100%;
     height: auto;
-    flex: 1 1 200px; /* Adjust this value as needed */
+    flex: 1 1 20px; /* Adjust this value as needed */
     border: 1px solid #ccc; /* Optional: Add a border around images */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
 }
 
 /* Footer Styles */
