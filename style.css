@@ -95,7 +95,7 @@ blockquote {
 }
 
 .gallery img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
     flex: 1 1 20px; /* Adjust this value as needed */
     border: 1px solid #ccc; /* Optional: Add a border around images */
