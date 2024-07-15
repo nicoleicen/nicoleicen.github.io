@@ -12,14 +12,6 @@ nav {
     position: relative; /* Ensure positioning for toggle button */
 }
 
-/* Styling for the menu icon (toggle button) */
-nav .menu-icon {
-    display: none; /* Hide by default */
-    font-size: 24px; /* Increase font size */
-    color: #3498db; /* Header 1 color (blue) */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
 /* Styling for the unordered list (nav links) */
 nav ul {
     list-style-type: none; /* Remove default list style */
@@ -87,17 +79,9 @@ nav ul ul li a:hover {
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Hide the menu by default */
+        display: flex; /* Ensure the menu is displayed */
         flex-direction: column; /* Stack items vertically */
         width: 100%; /* Full width */
-    }
-
-    nav .menu-icon {
-        display: block; /* Show the menu icon */
-    }
-
-    nav input[type="checkbox"]:checked + ul {
-        display: flex; /* Show the menu when checked */
     }
 
     nav ul li {
@@ -122,4 +106,3 @@ p:first-of-type::first-letter {
     font-size: 150%; /* Increase font size of the first letter */
     font-weight: bold; /* Make the first letter bold */
 }
-

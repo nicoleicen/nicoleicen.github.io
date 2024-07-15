@@ -13,6 +13,56 @@ header {
     padding: 1em 0;
 }
 
+/* Navigation Styles */
+nav {
+    background-color: #2980b9;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2980b9;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+nav ul li:hover ul,
+nav ul li ul:hover {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 0.5em 1em;
+}
+
 /* Main Content Styles */
 main {
     padding: 20px;
@@ -47,16 +97,7 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
     nav ul {
-        display: none;
-    }
-    
-    nav .menu-icon {
         display: block;
-    }
-    
-    nav input[type="checkbox"]:checked + ul {
-        display: flex;
-        flex-direction: column;
     }
     
     nav ul li {
@@ -97,6 +138,7 @@ footer {
         margin: 1in;
     }
 }
+
 /* Footer Icon Hover Effect */
 footer img {
     transition: transform 0.3s ease;
