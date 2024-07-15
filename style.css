@@ -95,12 +95,24 @@ blockquote {
 }
 
 .gallery img {
-    max-width: 20%;
-    height: auto;
-    flex: 1 1 20px; /* Adjust this value as needed */
+    width: 200px; /* Fixed width to ensure images are small */
+    height: auto; /* Maintain aspect ratio */
     border: 1px solid #ccc; /* Optional: Add a border around images */
-    border-radius: 5px; 
+    border-radius: 5px; /* Optional: Add rounded corners */
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%; /* Make images full width on smaller screens */
+    }
+}
+
 
 /* Footer Styles */
 footer {
