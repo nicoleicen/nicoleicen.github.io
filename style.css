@@ -95,21 +95,21 @@ blockquote {
 }
 
 .gallery img {
-    width: 200px; /* Fixed width to ensure images are small */
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ccc; /* Optional: Add a border around images */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    width: 150px; 
+    height: auto; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .gallery {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .gallery img {
-        width: 100%; /* Make images full width on smaller screens */
+        width: 100%; 
     }
 }
 
@@ -164,7 +164,7 @@ footer {
     }
     
     footer {
-        font-family: 'Merriweather', serif; /* Ensure custom font is used */
+        font-family: 'Merriweather', serif; 
     }
     
     @page {
