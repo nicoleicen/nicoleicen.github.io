@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1em;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        form div {
+            margin-bottom: 1em;
+        }
+
+        label {
+            margin-bottom: .5em;
+            color: #333333;
+            display: block;
+        }
+
+        input, textarea {
+            border: 1px solid #CCCCCC;
+            padding: .5em;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #3498db;
+        }
+
+        button {
+            padding: 0.7em;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                padding: .5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nicole Icen's Professional Portfolio</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="projects.html">Projects/Learn</a>
+                <ul>
+                    <li><a href="project1.html">Engagement Campaign</a></li>
+                    <li><a href="project2.html">Intern Guide</a></li>
+                    <li><a href="project3.html">Press Sports</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Personal Reflection</a></li>
+            <li><a href="contact.html">Contact Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <form action="mailto:nicoleicen@gmail.com?subject=Portfolio/Professional Website Contact" method="post" enctype="text/plain">
+            <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+            </div>
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nicole Icen. All rights reserved.</p>
+        <p>
+            <img src="phone.png" alt="Phone Icon" style="width:20px;height:20px;"> 1+888-888-8888
+            <br>
+            <img src="email.png" alt="Email Icon" style="width:20px;height:20px;"> <a href="mailto:nicoleicen@gmail.com">nicoleicen@gmail.com</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('first-name').focus();
+    </script>
+</body>
+</html>
